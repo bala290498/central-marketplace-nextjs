@@ -26,15 +26,8 @@ export const Header: React.FC<HeaderProps> = ({ onOpenGetStarted }) => {
           </div>
         </Link>
 
-        {/* Links & Action */}
+        {/* Action Button */}
         <div className="flex items-center gap-4">
-          <Link
-            href="/terms"
-            className="hidden sm:inline-block text-xs font-bold text-[#5c4a46] hover:text-[#eb4203] transition-colors"
-          >
-            Terms &amp; Conditions
-          </Link>
-
           <button
             type="button"
             onClick={onOpenGetStarted}

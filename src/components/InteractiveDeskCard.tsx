@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import dynamic from "next/dynamic";
+import { Search, Store } from "lucide-react";
 
 const ChennaiMap = dynamic(() => import("./ChennaiMap"), {
   ssr: false,
@@ -104,27 +105,37 @@ export const InteractiveDeskCard: React.FC<InteractiveDeskCardProps> = ({
             <button
               type="button"
               onClick={() => handleSelectRole("customer")}
-              className="w-full text-left p-4 rounded-2xl bg-[#f8ece6] text-[#3d2c2a] border border-[#edd5cb] font-extrabold hover:border-[#eb4203] hover:bg-[#fff5f0] transition-all cursor-pointer group"
+              className="w-full text-left p-4 rounded-2xl bg-[#f8ece6] text-[#3d2c2a] border border-[#edd5cb] font-extrabold hover:border-[#eb4203] hover:bg-[#fff5f0] transition-all cursor-pointer group flex items-start gap-3.5"
             >
-              <span className="block text-sm sm:text-base group-hover:text-[#eb4203] transition-colors">
-                I am looking for a contact
-              </span>
-              <small className="block font-semibold text-xs text-[#8a736c] mt-1">
-                Find property, services, providers nearby
-              </small>
+              <div className="shrink-0 w-10 h-10 rounded-xl bg-white text-[#eb4203] grid place-items-center shadow-xs group-hover:bg-[#eb4203] group-hover:text-white transition-colors">
+                <Search className="w-5 h-5" />
+              </div>
+              <div className="min-w-0 flex-1">
+                <span className="block text-sm sm:text-base group-hover:text-[#eb4203] transition-colors">
+                  I am looking for a contact
+                </span>
+                <small className="block font-semibold text-xs text-[#8a736c] mt-0.5">
+                  Find property, services, providers nearby
+                </small>
+              </div>
             </button>
 
             <button
               type="button"
               onClick={() => handleSelectRole("provider")}
-              className="w-full text-left p-4 rounded-2xl bg-[#f8ece6] text-[#3d2c2a] border border-[#edd5cb] font-extrabold hover:border-[#eb4203] hover:bg-[#fff5f0] transition-all cursor-pointer group"
+              className="w-full text-left p-4 rounded-2xl bg-[#f8ece6] text-[#3d2c2a] border border-[#edd5cb] font-extrabold hover:border-[#eb4203] hover:bg-[#fff5f0] transition-all cursor-pointer group flex items-start gap-3.5"
             >
-              <span className="block text-sm sm:text-base group-hover:text-[#eb4203] transition-colors">
-                I want to be listed
-              </span>
-              <small className="block font-semibold text-xs text-[#8a736c] mt-1">
-                Get your property, service, or business found
-              </small>
+              <div className="shrink-0 w-10 h-10 rounded-xl bg-white text-[#eb4203] grid place-items-center shadow-xs group-hover:bg-[#eb4203] group-hover:text-white transition-colors">
+                <Store className="w-5 h-5" />
+              </div>
+              <div className="min-w-0 flex-1">
+                <span className="block text-sm sm:text-base group-hover:text-[#eb4203] transition-colors">
+                  I want to be listed
+                </span>
+                <small className="block font-semibold text-xs text-[#8a736c] mt-0.5">
+                  Get your property, service, or business found
+                </small>
+              </div>
             </button>
           </div>
         </div>

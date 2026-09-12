@@ -11,7 +11,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenTerms }) => {
   return (
     <footer className="bg-[#eb4203] text-white text-center text-sm py-7 px-4 w-full mt-auto">
       <div className="flex flex-wrap justify-center items-center gap-2.5 sm:gap-4 mb-2.5 text-xs sm:text-sm font-extrabold">
-        <Link href="/terms" className="underline hover:opacity-90">
+        <Link href="/terms" target="_blank" rel="noopener noreferrer" className="underline hover:opacity-90">
           T&amp;C
         </Link>
         <span className="opacity-50">·</span>
