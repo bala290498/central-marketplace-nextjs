@@ -13,7 +13,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenGetStarted }) => {
         Find the right local player.
       </h1>
       <p className="text-sm sm:text-base text-[#5c4a46] leading-relaxed max-w-xl mx-auto mb-6">
-        We connect people, customers and buyers with property owners, service providers and local sellers. The list is being built — start on WhatsApp with the desk.
+        Central Marketplace (Central Market Place) connects customers and buyers with property owners, home food providers, wholesalers and local service players across Chennai. Start on WhatsApp with the desk.
       </p>
 
       {onOpenGetStarted && (
