@@ -29,7 +29,7 @@ export const TermsModal: React.FC<TermsModalProps> = ({ isOpen, onClose }) => {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 modal-backdrop animate-in fade-in duration-200">
-      <div className="absolute inset-0" onClick={onClose}></div>
+      <div className="absolute inset-0 bg-[#2b1f1d]/50 backdrop-blur-md transition-all duration-200" onClick={onClose}></div>
 
       <div className="relative w-full max-w-2xl max-h-[85vh] bg-white rounded-3xl shadow-2xl border border-[#e8ded6] flex flex-col overflow-hidden z-10 animate-in zoom-in-95 duration-200">
         {/* Header */}

@@ -33,8 +33,8 @@ export const GetStartedModal: React.FC<GetStartedModalProps> = ({
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 modal-backdrop animate-in fade-in duration-200">
-      {/* Click outside backdrop */}
-      <div className="absolute inset-0" onClick={onClose}></div>
+      {/* Click outside backdrop with backdrop blur */}
+      <div className="absolute inset-0 bg-[#2b1f1d]/50 backdrop-blur-md transition-all duration-200" onClick={onClose}></div>
 
       {/* Modal Container Box */}
       <div className="relative w-full max-w-lg bg-[#fffaf6] rounded-[28px] shadow-2xl border border-[#ead9ce] max-h-[90vh] flex flex-col overflow-hidden z-10 animate-in zoom-in-95 duration-200">
