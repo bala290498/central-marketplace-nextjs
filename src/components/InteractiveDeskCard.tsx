@@ -92,16 +92,7 @@ export const InteractiveDeskCard: React.FC<InteractiveDeskCardProps> = ({
       {/* Screen 1: Role Selection */}
       {step === 1 && (
         <div className="space-y-4 text-left">
-          <div className="bg-[#f7f0ea] rounded-2xl rounded-bl-sm p-4 text-left border border-[#ead9ce]">
-            <strong className="block text-xs font-extrabold text-[#eb4203] uppercase tracking-wider mb-1">
-              Desk
-            </strong>
-            <p className="text-sm font-semibold text-[#3d2c2a]">
-              What brings you here today?
-            </p>
-          </div>
-
-          <div className="grid gap-3 pt-2">
+          <div className="grid gap-3">
             <button
               type="button"
               onClick={() => handleSelectRole("customer")}
